@@ -1,0 +1,176 @@
+#
+# This file lists all of the proprietary blobs that need to be
+# extracted from a stock device. The extract-files.sh script
+# parses this file and copies the blobs into the vendor and build
+# trees as needed.
+#
+# File format:
+#   - Comments lines start with a hash (#) character and will be
+#     ignore.
+#   - Blobs should be listed with their path relative to /system
+#     on the device.
+#   - A different destination path may be specified after a colon on
+#     the same line as the blob source path. Otherwise, the
+#     destination path with be the same as it was on the device.
+#   - Options for a particular blob are specified in a comment
+#     after the blob path.
+#
+# Blob options:
+#   - needed_for_build: the blob will also be copied into the obj
+#     directory for use in the build of other open source files.
+#   - optional: if the blob is not found, extraction will not abort.
+#     directory for use in the build of other open source files.
+#
+lib/libtinyalsa.so
+lib/libmhal.so
+lib/libmhalcontent.so
+lib/libmhaldrv.so
+lib/libmhalmdp.so
+lib/libmhalpipe.so
+lib/libmhalscenario.so
+lib/libmhalutility.so
+lib/libmpoencoder.so
+lib/libaudiocomponentengine.so
+lib/libcamalgo.so
+lib/libcam.utils.so
+lib/libcameracustom.so
+lib/libnvram_platform.so
+lib/libhwm.so
+lib/libcamera_metadata.so
+lib/libnvram_sec.so
+lib/libnvram.so
+lib/libmatv_cust.so
+lib/libbluetoothdrv.so
+lib/libmtklimiter.so
+lib/libaudiodcrflt.so
+lib/mtk-ril.so
+lib/libblisrc32.so
+lib/libmtk_drvb.so
+lib/libaudiocompensationfilter.so
+lib/libbluetooth_mtk.so
+lib/libnvram_daemon_callback.so
+lib/libmtkshifter.so
+lib/libcamera_client.so
+lib/libcustom_nvram.so
+lib/libspeech_enh_lib.so
+lib/libfile_op.so
+lib/libblisrc.so
+lib/librilmtk.so
+lib/libion.so
+lib/hw/gralloc.default.so
+lib/hw/lights.default.so
+lib/hw/camera.default.so
+lib/hw/gps.default.so
+lib/hw/sensors.default.so
+lib/hw/power.default.so
+lib/hw/hwcomposer.mt6577.so
+lib/hw/mmumapper.mt6577.so
+lib/hw/audio.primary.mt6577.so
+lib/hw/local_time.default.so
+lib/hw/keystore.default.so
+lib/libaudiocustparam.so
+lib/libssladp.so
+lib/libaed.so
+lib/libbessound_hd_mtk.so
+lib/libaudiosetting.so
+lib/libmpo.so
+lib/libcameraservice.so
+lib/libbessound_mtk.so
+lib/libexif.so
+lib/libeis.so
+lib/libutilitysw.so
+lib/libutilrilmtk.so
+xbin/libmnlp_mt6628
+xbin/mnld
+bin/akmd8975
+bin/permission_check
+bin/geomagneticd
+bin/orientationd
+bin/muxreport
+bin/nvram_agent_binder
+bin/msensord
+bin/rild
+bin/ami304d
+bin/mtk_agpsd
+bin/6620_launcher
+bin/memsicd
+bin/bmm050d
+bin/pppd
+bin/ccci_mdinit
+bin/thermal_manager
+bin/ccci_fsd
+bin/wlan_loader
+bin/thermald
+bin/akmd8963
+bin/nvram_daemon
+bin/rildmd2
+bin/pppd_dt
+bin/wmt_loader
+bin/thermal
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32.bin
+vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24.bin
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24
+vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24
+vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N.bin
+vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N
+vendor/lib/libwvm.so
+vendor/lib/libusc.so
+vendor/lib/egl/libGLESv2_mtk.so
+vendor/lib/egl/libGLESv1_CM_mtk.so
+vendor/lib/egl/libEGL_mtk.so
+vendor/lib/libwvdrm_L3.so
+vendor/lib/libglslcompiler.so
+vendor/lib/libpvrANDROID_WSEGL.so
+vendor/lib/libPVRScopeServices.so
+vendor/lib/libWVStreamControlAPI_L3.so
+vendor/lib/libBLPP.so
+vendor/lib/drm/libdrmwvmplugin.so
+vendor/lib/hw/gralloc.mt6577.so
+vendor/lib/libIMGegl.so
+vendor/lib/libsrv_um.so
+vendor/lib/libpvr2d.so
+vendor/lib/libsrv_init.so
+vendor/bin/pvrsrvctl
+vendor/bin/rc.fac
+etc/audio_effects.conf
+etc/agps_profiles_conf.xml
+etc/.tp/.ht120.mtc
+etc/.tp/thermal.conf
+etc/.tp/thermal.off.conf
+etc/audio_policy.conf
+etc/firmware/mt6628_ant_m1.cfg
+etc/firmware/WIFI_RAM_CODE_MT6628
+etc/firmware/WIFI_RAM_CODE
+etc/firmware/mt6628_patch_e1_hdr.bin
+etc/firmware/WIFI_RAM_CODE_E6
+etc/firmware/mt6628/mt6628_fm_v2_coeff.bin
+etc/firmware/mt6628/mt6628_fm_v4_coeff.bin
+etc/firmware/mt6628/mt6628_fm_v1_patch.bin
+etc/firmware/mt6628/mt6628_fm_rom.bin
+etc/firmware/mt6628/mt6628_fm_v3_coeff.bin
+etc/firmware/mt6628/mt6628_fm_v5_patch.bin
+etc/firmware/mt6628/mt6628_fm_v3_patch.bin
+etc/firmware/mt6628/mt6628_fm_v2_patch.bin
+etc/firmware/mt6628/mt6628_fm_v4_patch.bin
+etc/firmware/mt6628/mt6628_fm_v1_coeff.bin
+etc/firmware/mt6628/mt6628_fm_v5_coeff.bin
+etc/firmware/modem_1_3g_n.img
+etc/firmware/S_ANDRO_SFL.ini
+etc/firmware/mt6628_patch_e2_1_hdr.bin
+etc/firmware/catcher_filter_1_3g_n.bin
+etc/firmware/WMT.cfg
+etc/firmware/touchpanel/tinno-fts-update-5d27.ekt
+etc/firmware/touchpanel/tinno-fts-update-594e.bin
+etc/firmware/WIFI_RAM_CODE_SOC
+etc/firmware/WIFI_RAM_CODE_MT6630
+etc/firmware/mt6628_patch_e2_0_hdr.bin
+etc/firmware/DSP_ROM_1_3g_n
+etc/mtk_omx_core.cfg
