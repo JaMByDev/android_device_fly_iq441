@@ -1,7 +1,7 @@
 #!/bin/sh
 
-VENDOR=micromax
-DEVICE=a110
+VENDOR=fly
+DEVICE=iq441
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
 

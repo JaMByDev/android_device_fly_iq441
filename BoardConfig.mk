@@ -91,7 +91,7 @@ WIFI_DRIVER_FW_PATH_AP:=AP
 WIFI_DRIVER_FW_PATH_P2P:=P2P
 
 # telephony
-BOARD_RIL_CLASS := ../../../device/fly/441/ril/
+BOARD_RIL_CLASS := $(DEVICE_FOLDER)/device/fly/441/ril/com/android/internal/telephony/MediaTekRIL.java
 
 #nvram permission fix
 TARGET_SPECIFIC_HEADER_PATH := device/fly/441/include
