@@ -68,9 +68,16 @@ lib/hw/mmumapper.mt6577.so
 lib/hw/audio.primary.mt6577.so
 lib/hw/local_time.default.so
 lib/hw/keystore.default.so
-lib/libaudiocustparam.so
 lib/libssladp.so
+li +lib/libaudiosetting.so
 lib/libaed.so
+lib/libaudiocustparam.so
+lib/libblisrc.so
+lib/libmtk_drvb.so
+lib/libspeech_enh_lib.so
+lib/libaudiocompensationfilter.so
+lib/libbessound_mtk.so
+lib/libmedia.so
 lib/libbessound_hd_mtk.so
 lib/libaudiosetting.so
 lib/libmpo.so
@@ -146,6 +153,7 @@ etc/.tp/.ht120.mtc
 etc/.tp/thermal.conf
 etc/.tp/thermal.off.conf
 etc/audio_policy.conf
+etc/audio_effects.conf
 etc/firmware/mt6628_ant_m1.cfg
 etc/firmware/WIFI_RAM_CODE_MT6628
 etc/firmware/WIFI_RAM_CODE
