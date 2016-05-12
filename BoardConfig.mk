@@ -96,6 +96,10 @@ TARGET_SPECIFIC_HEADER_PATH := device/fly/441/include
 # allow more than one lun file
 TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
 
+#blob hacks
+COMMON_GLOBAL_CFLAGS += -DMR1_AUDIO_BLOB -DDISABLE_HW_ID_MATCH_CHECK -DNEEDS_VECTORIMPL_SYMBOLS
+BOARD_HAVE_PRE_KITKAT_AUDIO_BLOB := true
+
 #SEPolicy
 BOARD_SEPOLICY_DIRS += \
     device/fly/441/sepolicy

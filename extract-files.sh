@@ -17,5 +17,7 @@ done
 
 # some extra stuff
 adb pull /system/lib/libaudio.primary.default.so $BASE/lib/hw/audio.primary.mt6577.so
+adb pull /system/lib/hw/audio_policy.default.so
+
 
 ./setup-makefiles.sh
