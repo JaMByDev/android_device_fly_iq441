@@ -71,7 +71,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_FOLDER)/root/fstab.mt6577
 #TARGET_PREBUILT_RECOVERY_KERNEL := $(DEVICE_FOLDER)/recovery/kernel
 BOARD_HAS_NO_SELECT_BUTTON := true
 
-#philz
+#boot
 BOARD_USE_MTK_LAYOUT := true
 BOARD_MTK_BOOT_LABEL := "/boot"
 BOARD_HAS_LOW_RESOLUTION := true
@@ -89,9 +89,6 @@ WIFI_DRIVER_FW_PATH_PARAM:="/dev/wmtWifi"
 WIFI_DRIVER_FW_PATH_STA:=STA
 WIFI_DRIVER_FW_PATH_AP:=AP
 WIFI_DRIVER_FW_PATH_P2P:=P2P
-
-# telephony
-BOARD_RIL_CLASS := $(DEVICE_FOLDER)/device/fly/441/ril/com/android/internal/telephony/MediaTekRIL.java
 
 #nvram permission fix
 TARGET_SPECIFIC_HEADER_PATH := device/fly/441/include

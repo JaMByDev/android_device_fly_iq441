@@ -45,6 +45,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/media_codecs.xml:system/etc/media_codecs.xml 
 	#$(LOCAL_PATH)/media_profiles.xml:system/etc/media_profile.xml
+	
+ 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril_class=MediaTekRIL
 
 PRODUCT_PROPERTY_OVERRIDES := \
 	fmradio.driver.chip=3 \
