@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/root/init.modem.rc:root/init.modem.rc \
 	$(LOCAL_PATH)/root/init.protect.rc:root/init.protect.rc \
 	$(LOCAL_PATH)/root/init.usb.mt6577.rc:/root/init.usb.mt6577.rc \
+	$(LOCAL_PATH)/root/init.xlog.rc:/root/init.xlog.rc
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
