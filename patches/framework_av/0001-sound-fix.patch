@@ -1,0 +1,58 @@
+From 9e506a05c7e9c13c3b168cfdd02be2acb4931cdf Mon Sep 17 00:00:00 2001
+From: Your Name <dee3000@bk.ru>
+Date: Fri, 13 May 2016 18:30:24 +0300
+Subject: [PATCH] sound fix
+
+---
+ media/libmedia/Android.mk      |  4 ++++
+ media/libmedia/AudioSystem.cpp | 21 +++++++++++++++++++++
+ 2 files changed, 25 insertions(+)
+
+diff --git a/media/libmedia/Android.mk b/media/libmedia/Android.mk
+index 139d6f8..2d9c1f8 100644
+--- a/media/libmedia/Android.mk
++++ b/media/libmedia/Android.mk
+@@ -22,6 +22,10 @@ endif
+ 
+ include $(CLEAR_VARS)
+ 
++ifeq ($(TARGET_BOARD_PLATFORM),mt6577)
++LOCAL_CFLAGS += -MTK_MT6577
++endif
++
+ LOCAL_SRC_FILES:= \
+     AudioTrack.cpp \
+     AudioTrackShared.cpp \
+diff --git a/media/libmedia/AudioSystem.cpp b/media/libmedia/AudioSystem.cpp
+index 9cae21c..3114dd9 100644
+--- a/media/libmedia/AudioSystem.cpp
++++ b/media/libmedia/AudioSystem.cpp
+@@ -999,4 +999,25 @@ void AudioSystem::AudioPolicyServiceClient::onAudioPatchListUpdate()
+     }
+ }
+ 
++ #ifdef MTK_MT6577
++ extern "C" void _ZN7android11AudioSystem24getVoiceUnlockDLInstanceEv()
++ { return; }
++ extern "C" int _ZN7android11AudioSystem23GetVoiceUnlockDLLatencyEv()
++ { return 0; }
++ extern "C" int _ZN7android11AudioSystem17SetVoiceUnlockSRCEjj (uint, uint)
++ { return 0; }
++ extern "C" bool _ZN7android11AudioSystem18startVoiceUnlockDLEv()
++ { return 0; }
++ extern "C" int _ZN7android11AudioSystem15ReadRefFromRingEPvjS1_(void*, uint32_t,void*)
++ { return 0; }
++ extern "C" int _ZN7android11AudioSystem20GetVoiceUnlockULTimeEPv(void*)
++ { return 0; }
++ extern "C" void _ZN7android11AudioSystem25freeVoiceUnlockDLInstanceEv()
++ { return; }
++ extern "C" bool _ZN7android11AudioSystem17stopVoiceUnlockDLEv()
++ { return 0; }
++ extern "C" void _ZN7android15IATVCtrlService11asInterfaceERKNS_2spINS_7IBinderEEE()
++ { return; }
++ #endif
++
+ }; // namespace android
+-- 
+1.9.1
+
