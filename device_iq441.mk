@@ -28,7 +28,7 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/root/init.mt6577.rc:root/init.mt6577.rc \
 	$(LOCAL_PATH)/root/init.modem.rc:root/init.modem.rc \
 	$(LOCAL_PATH)/root/init.protect.rc:root/init.protect.rc \
-	$(LOCAL_PATH)/root/init.usb.mt6577.rc:/root/init.usb.mt6577.rc
+	$(LOCAL_PATH)/root/init.usb.mt6577.rc:/root/init.usb.mt6577.rc \
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
@@ -108,6 +108,9 @@ PRODUCT_PACKAGES += \
 #gralloc extra
 RODUCT_PACKAGES += \
    	libgralloc_extra
+	
+PRODUCT_PACKAGES += \
+    libxlog
 	
 # FM Radio
 PRODUCT_PACKAGES += \
