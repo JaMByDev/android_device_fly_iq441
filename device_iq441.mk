@@ -46,9 +46,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/media_codecs.xml:system/etc/media_codecs.xml 
 	#$(LOCAL_PATH)/media_profiles.xml:system/etc/media_profile.xml
-	
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.ril_class=MediaTekRIL
 
 PRODUCT_PROPERTY_OVERRIDES := \
 	fmradio.driver.chip=3 \
@@ -57,11 +54,11 @@ PRODUCT_PROPERTY_OVERRIDES := \
 	mediatek.wlan.ctia=0 \
 	mediatek.wlan.module.postfix=_mt6628 \
 	persist.mtk.wcn.combo.chipid=0x6628 \
+	persist.radio.multisim.config=dsds \
 	persist.radio.fd.counter=15 \
 	persist.radio.fd.off.counter=5 \
 	persist.radio.fd.off.r8.counter=5 \
 	persist.radio.fd.r8.counter=15 \
-	persist.radio.multisim.config=dsds \
 	persist.sys.usb.config=adb \
 	ril.current.share_modem=2 \
 	ril.external.md=0 \
