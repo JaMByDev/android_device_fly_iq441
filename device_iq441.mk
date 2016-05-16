@@ -46,7 +46,6 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/media_codecs.xml:system/etc/media_codecs.xml 
 	#$(LOCAL_PATH)/media_profiles.xml:system/etc/media_profile.xml
 	
- 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.ril_class=MediaTekRIL
 
@@ -105,6 +104,20 @@ PRODUCT_PACKAGES += \
 #ui helper
 PRODUCT_PACKAGES += \
 	libui-mtk
+	
+#gralloc extra
+RODUCT_PACKAGES += \
+   	libgralloc_extra
+	
+# FM Radio
+PRODUCT_PACKAGES += \
+     	FmRadio \
+     	libfmjni \
+	libfmmt6620 \
+        libfmmt6628 \
+        libfmmt6627 \
+        libfmmt6630 \
+        libfmcust 
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
