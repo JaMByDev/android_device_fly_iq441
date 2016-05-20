@@ -22,6 +22,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ALL_PREBUILT += $(INSTALLED_KERNEL_TARGET)
+
 ifeq ($(TARGET_DEVICE),iq441)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 endif

@@ -91,6 +91,9 @@ WIFI_DRIVER_FW_PATH_STA:=STA
 WIFI_DRIVER_FW_PATH_AP:=AP
 WIFI_DRIVER_FW_PATH_P2P:=P2P
 
+# Libwebviewchromium hack 
+PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
+
 #nvram permission fix
 TARGET_SPECIFIC_HEADER_PATH := device/fly/441/include
 
